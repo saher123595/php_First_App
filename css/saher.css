@@ -1,0 +1,135 @@
+body {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.chat {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 470px;
+    background-color: #DDD;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #bcc1c4, 0 0 40px 0 #bcc1c4, 0 0 60px 0 #bcc1c4;
+}
+
+.chat .head {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 10px 0;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.chat .head a {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: 0;
+    background: #303030;
+    color: #FFF !important;
+    cursor: pointer;
+    text-transform: capitalize;
+    margin-right: 20px;
+}
+
+.chat .head a.Active {
+    display: none;
+}
+
+.chat .head>div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.chat .head>div img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.chat .head>div>div {
+    margin-left: 10px;
+}
+
+.chat .head>div>div h5 {
+    margin: 0 !important;
+}
+
+.chat .head>div>div span {
+    text-transform: capitalize;
+}
+
+.chat .body {
+    height: 500px;
+    padding: 10px;
+    overflow: auto;
+}
+
+.chat .body p.one {
+    background: rgb(175, 33, 33);
+    padding: 10px 14px;
+    border-radius: 10px;
+    max-width: 80%;
+    color: #FFF;
+    text-transform: capitalize;
+    margin-right: auto;
+    text-align: start;
+    width: fit-content;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.chat .body p.two {
+    background: rgb(209, 209, 209);
+    padding: 10px 14px;
+    border-radius: 10px;
+    max-width: 80%;
+    color: #000;
+    text-transform: capitalize;
+    margin-left: auto;
+    text-align: right;
+    width: fit-content;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.chat .foot {
+    height: 80px;
+    background-color: #EEE;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chat .foot input {
+    width: 80%;
+    height: 45px;
+    outline: 0;
+    padding: 10px;
+    border: 1px solid #CCC;
+    border-radius: 5px 0 0 5px;
+}
+
+.chat .foot button {
+    width: 45px;
+    height: 45px;
+    border: 0;
+    background-color: rgb(194, 193, 193);
+    border-radius: 0 5px 5px 0;
+}
+
+@media (max-width:600px) {
+    .chat {
+        width: 350px;
+        height: 400px;
+    }
+}

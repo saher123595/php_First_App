@@ -1,0 +1,646 @@
+* {
+    outline: 0;
+    box-sizing: border-box;
+    transition: .4s;
+}
+
+
+/* starts loader */
+
+#preloader {
+    overflow: hidden;
+    background-image: linear-gradient(145deg, #00b4c6 0%, #0088e8 100%);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 9999;
+    color: #fff;
+}
+
+#preloader .jumper {
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    position: absolute;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+#preloader .jumper>div {
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    position: absolute;
+    opacity: 0;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: jumper 1s 0s linear infinite;
+    animation: jumper 1s 0s linear infinite;
+}
+
+#preloader .jumper>div:nth-child(2) {
+    -webkit-animation-delay: 0.33333s;
+    animation-delay: 0.33333s;
+}
+
+#preloader .jumper>div:nth-child(3) {
+    -webkit-animation-delay: 0.66666s;
+    animation-delay: 0.66666s;
+}
+
+@-webkit-keyframes jumper {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+}
+
+@keyframes jumper {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* ends loader */
+
+.Moon {
+    background-color: #000;
+}
+
+nav .You {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e91e63;
+    border-radius: 5px;
+}
+
+.All .dropdown-toggle::after {
+    display: none;
+}
+
+nav .You .YOU {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e91e63;
+    padding: 5px 18px;
+    border-radius: 5px;
+}
+
+nav .You img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav .You h5 {
+    margin: 0 0 0 15px;
+    text-transform: capitalize;
+    color: #FFF;
+}
+
+nav #navbarSupportedContent .navbar-nav {
+    padding: 10px 0;
+}
+
+nav .All .AllDriends {
+    left: -94px;
+}
+
+section.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section.body a {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+hr {
+    margin: 7px !important;
+}
+
+ul.dropdown-menu {
+    max-height: 400px;
+    overflow: auto;
+    width: 332px;
+    padding: 12px;
+    margin: 0;
+}
+
+ul.dropdown-menu li {
+    margin: 0 0 8px;
+    background-color: #DDD;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+ul li button {
+    padding: 8px 20px;
+    border-radius: 5px;
+    background: #e91e63;
+    color: #FFF;
+    text-transform: capitalize;
+    font-weight: 800;
+    border: 0;
+}
+
+ul.dropdown-menu li:last-child {
+    margin: 0;
+}
+
+ul.dropdown-menu div.friend {
+    width: 100%;
+    margin: 0;
+}
+
+ul.dropdown-menu div.friend>div>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.dropdown-menu a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul.dropdown-menu .friend {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    width: 100%;
+    margin: 8px 0;
+}
+
+ul.dropdown-menu .friend p {
+    text-align: center;
+    padding: 10px;
+}
+
+ul.dropdown-menu .friend img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+ul.dropdown-menu .friend>div {
+    margin-left: 10px;
+    width: 100%;
+}
+
+.users .friend>div h5 {
+    margin: 0 !important;
+}
+
+ul.dropdown-menu .friend>div button {
+    text-transform: capitalize;
+    border-radius: 5px;
+    border: 0;
+    padding: 8px 10px;
+    background-color: #303030;
+    color: #FFF;
+    margin: 0 4px;
+}
+
+nav .You ul.AllDriends {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.AllDriends li {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 8px 0;
+    border-bottom: 2px solid #000;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #ddd;
+}
+
+ul.You li:last-child {
+    border-bottom: 0;
+}
+
+ul.AllDriends li a .friend {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+ul.AllDriends li a .friend img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+ul.AllDriends li a .friend div {
+    margin-left: 10px;
+    width: 69%;
+}
+
+.YourPost {
+    width: 550px;
+}
+
+.YourPost textarea {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    border: 2px solid #e91e63;
+    resize: none;
+    outline: none;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.YourPost textarea.one::placeholder {
+    text-transform: capitalize;
+    color: #000;
+}
+
+.YourPost textarea.one {
+    background-color: #ffeb3b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    border: 0;
+    text-align: center;
+}
+
+.YourPost textarea.two {
+    background-color: #795548;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border: 0;
+    text-align: center;
+}
+
+.YourPost textarea.two::placeholder {
+    color: #FFF;
+    text-transform: capitalize;
+}
+
+.YourPost textarea.three {
+    background-color: #ff5722;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border: 0;
+    text-align: center;
+}
+
+.YourPost textarea.three::placeholder {
+    color: #FFF;
+    text-transform: capitalize;
+}
+
+.YourPost textarea.four {
+    background-color: #e91e63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border: 0;
+    text-align: center;
+}
+
+.YourPost textarea.four::placeholder {
+    color: #FFF;
+    text-transform: capitalize;
+}
+
+.YourPost div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.YourPost div button {
+    margin: 5px;
+    border-radius: 5px;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #FFF;
+}
+
+.YourPost div button:first-child {
+    color: #000;
+}
+
+.YourPost>button {
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 0;
+    background: #50b1d8;
+    color: #FFF;
+    text-transform: capitalize;
+    margin: 10px auto;
+    display: block;
+    font-size: 23px;
+}
+
+.Posts {
+    width: 550px;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    background-color: #EEE;
+    padding: 20px;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.Posts.Moon {
+    background-color: #ffffff30;
+}
+
+.Posts.Moon .post {
+    background-color: #000;
+}
+
+.Posts .post {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.Posts .post .head {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Posts .post .head img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.Posts.Moon .post h5 {
+    color: #FFF;
+}
+
+.Posts .post .head h5 {
+    margin: 0 0 0 10px;
+    text-transform: capitalize;
+}
+
+.Posts .post .body {
+    padding: 10px;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    margin-bottom: 10px;
+}
+
+.Posts .post .body p {
+    margin: 0;
+}
+
+.Posts .post .body p.one {
+    height: 200px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #ffeb3b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+    padding: 20px;
+}
+
+.Posts .post .body p.two {
+    height: 200px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #795548;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+    padding: 20px;
+}
+
+.Posts .post .body p.three {
+    height: 200px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #ff5722;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+    padding: 20px;
+}
+
+.Posts .post .body p.four {
+    height: 200px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #e91e63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+    padding: 20px;
+}
+
+.Posts .post .foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.Posts.Moon .post .foot button {
+    background-color: #FFF;
+    color: #000;
+}
+
+.Posts .post .foot button {
+    width: calc(100% / 3);
+    padding: 9px 0px;
+    color: #FFF;
+    border-radius: 5px;
+    border: 0;
+    background-color: #00000099;
+}
+
+.Posts .post .comments {
+    margin: 20px 0 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Posts .post .comments .comment>div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.Posts .post .comments .comment>div img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.Posts .post .comments .comment>div>div {
+    margin-left: 10px;
+    padding: 10px 14px 10px 8px;
+    background-color: #000;
+    color: #FFF;
+    border-radius: 10px;
+}
+
+.Posts.Moon .post .comments .comment>div>div {
+    background-color: #FFF;
+    color: #000;
+}
+
+.Posts .post .comments .comment>div>div h5 {
+    margin: 5px !important;
+    text-transform: capitalize;
+}
+
+.Posts.Moon .post .comments .comment>div>div h5 {
+    color: #000;
+}
+
+.Posts .post .comments .comment>div>div p {
+    margin: 0 0 0 10px;
+    text-transform: capitalize;
+}
+
+.Posts .post .comments div.write {
+    margin: 20px 0 10px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.Posts .post .comments div.write textarea {
+    width: 90%;
+    height: 40px;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #08080044;
+    overflow: hidden;
+    resize: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.Posts .post .comments div.write button {
+    width: 10%;
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #08080044;
+    background: #FFF;
+}
+
+.Posts .post .comments button:hover {
+    background-color: #08080044;
+}
+
+@media (max-width:1000px) {
+    nav .All .AllDriends {
+        left: 0;
+    }
+    ul.dropdown-menu {
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media (max-width:995px) {
+    nav {
+        padding: 10px !important;
+    }
+}
+
+@media (max-width:600px) {
+    .YourPost,
+    .Posts {
+        width: 90%;
+    }
+}
+
+@media (max-width:380px) {
+    .YourPost,
+    .Posts {
+        width: 99%;
+    }
+    .Posts {
+        padding: 5px;
+    }
+}

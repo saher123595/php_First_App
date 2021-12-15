@@ -1,0 +1,114 @@
+section.body form .error {
+    display: none;
+    background: #e91e63;
+    padding: 14px 20px;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 18px;
+    text-align: center;
+}
+
+.bodyAother {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 97vh;
+}
+
+.bodyAother form {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 370px;
+    background-color: #eee;
+    padding: 20px 20px 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 #bcc1c4, 0 0 40px 0 #bcc1c4, 0 0 60px 0 #bcc1c4;
+    margin: auto;
+}
+
+.bodyAother form>div {
+    margin: 0 0 20px;
+}
+
+.bodyAother form>div h5 {
+    text-transform: capitalize;
+}
+
+.bodyAother form>div.AllInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.bodyAother form>div.AllInput input {
+    width: 98%;
+}
+
+.bodyAother form>div.All input {
+    width: 100%;
+}
+
+.bodyAother form>div.All {
+    position: relative;
+}
+
+.bodyAother form>div.All button {
+    position: absolute;
+    height: 40px;
+    bottom: 1px;
+    right: 2px;
+    width: 40px;
+    border-radius: 5px;
+    border: 0;
+    background-color: transparent;
+    outline: 0;
+}
+
+.bodyAother form>div.All button i.fa-eye:before {
+    content: "\f06e";
+}
+
+.bodyAother form>div.All button.active i.fa-eye:before {
+    content: "\f070";
+}
+
+.bodyAother form input.Input {
+    width: 100%;
+    padding: 8px 10px;
+    outline: 0;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    margin-top: 2px;
+}
+
+.bodyAother form input[type="file"] {
+    display: none;
+}
+
+.bodyAother form input[type="file"]+label {
+    width: 100%;
+    height: 40px;
+    background-color: #CCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 2px;
+    cursor: pointer;
+}
+
+.bodyAother form input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+}
+
+.bodyAother form p {
+    text-align: center;
+}
